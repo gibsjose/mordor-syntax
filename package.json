@@ -1,9 +1,9 @@
 {
-  "name": "atom-dark-syntax",
+  "name": "mordor-syntax",
   "theme": "syntax",
-  "version": "0.27.0",
-  "description": "A dark theme for syntax",
-  "repository": "https://github.com/atom/atom-dark-syntax",
+  "version": "0.0.0",
+  "description": "One theme to rule them all",
+  "repository": "https://github.com/gibsjose/mordor-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
