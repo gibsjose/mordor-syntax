@@ -3,6 +3,7 @@
 atom-text-editor, :host {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
+    border-radius: 2px;
     
     .invisible-character {
         color: @syntax-invisible-character-color;
@@ -14,6 +15,7 @@ atom-text-editor, :host {
     
     .wrap-guide {
         background-color: @syntax-wrap-guide-color;
+        border-radius: 2px;
     }
     
     .gutter {
@@ -42,6 +44,7 @@ atom-text-editor, :host {
     
     .selection .region {
         background-color: @syntax-selection-color;
+        border-radius: 2px;
     }
     
     // Markdown Styles
@@ -101,7 +104,7 @@ atom-text-editor, :host {
 }
 
 .bracket-matcher .region {
-    border-radius: 2px;
+    border-radius: 1px;
     border-bottom: 2px solid @light-yellow;
     background-color: @darker-gray;
 }
@@ -147,6 +150,13 @@ atom-text-editor, :host {
         color: @flat-blue;
     }
     
+    // @TODO
+    &.type.class.todo {
+        color: @light-yellow;
+        background-color: @dark-gray;
+        border-radius: 2px;
+    }
+    
     &.modifier {
         color: @flat-blue;
     }
@@ -180,6 +190,7 @@ atom-text-editor, :host {
 .invalid.illegal {
     color: @yellow;
     background-color: @red;
+    border-radius: 2px;
 }
 
 // String interpolation in Ruby, CoffeeScript, and others
@@ -217,6 +228,7 @@ atom-text-editor, :host {
         &.group {
             color: @light-yellow;
             background-color: rgba(255, 255, 255, 0.06);
+            border-radius: 2px;
         }
         
         &.character-class {
@@ -341,19 +353,23 @@ atom-text-editor, :host {
     &.diff.header {
         color: @very-light-gray;
         background-color: @very-dark-gray;
+        border-radius: 2px;
     }
     
     &.separator {
         color: @flat-green;
         background-color: @darker-gray;
+        border-radius: 2px;
     }
     
     &.line.entry.logfile,
     &.line.exit.logfile {
         background-color: rgba(238, 238, 238, 0.16);
+        border-radius: 2px;
     }
     
     &.line.error.logfile {
         background-color: @red;
+        border-radius: 2px;
     }
 }
