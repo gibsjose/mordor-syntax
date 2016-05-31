@@ -258,6 +258,14 @@ atom-text-editor, :host {
     }
 }
 
+// Fix issue with begin parenthesis coloured as a function call
+// for function arguments
+.punctuation {
+    &.definition.parameters {
+        color: @syntax-text-color;
+    }
+}
+
 .source .entity.name.tag,
 .source .punctuation.tag {
     color: @portafino;
