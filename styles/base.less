@@ -151,6 +151,9 @@ atom-text-editor, :host {
     &.operator {
         color: @lighter-gray;
     }
+    &.operator.logical {
+        color: @portafino;
+    }
 }
 
 .storage {
@@ -259,6 +262,10 @@ atom-text-editor, :host {
         color: @light-yellow;
     }
     
+    &.function.magic {
+        color: @red;
+    }
+    
     &.constant {
         color: @light-yellow;
     }
@@ -298,6 +305,10 @@ atom-text-editor, :host {
 .meta {
     &.function-call {
         color: @light-yellow;
+    }
+    
+    &.function-call.arguments {
+        color: @light-gray;
     }
     
     &.preprocessor.c {
