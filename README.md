@@ -1,3 +1,5 @@
-# Atom Mordor Syntax theme
+# Mordor Syntax Theme
 
-A dark syntax theme for Atom based on [atom-dark-syntax](https://github.com/atom/atom-dark-syntax)
+![screenshot](screenshot.png)
+
+A dark syntax theme for Atom based on [atom-dark-syntax](https://github.com/atom/atom-dark-syntax).
