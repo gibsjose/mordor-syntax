@@ -1,122 +1,67 @@
 @import 'syntax-variables';
 
-atom-text-editor {
-    background-color: @syntax-background-color;
-    color: @syntax-text-color;
-    border-radius: 2px;
+// Markdown Styles
+.syntax--source.syntax--gfm {
+    color: @light-gray;
+}
 
-    .invisible-character {
-        color: @syntax-invisible-character-color;
+.syntax--gfm {
+    .syntax--markup.syntax--heading {
+        color: @light-yellow;
     }
 
-    .indent-guide {
-        color: @syntax-indent-guide-color;
+    .syntax--markup.syntax--bold {
+        color: @flat-blue;
+        font-weight: bold;
     }
 
-    .wrap-guide {
-        background-color: @syntax-wrap-guide-color;
-        border-radius: 2px;
+    .syntax--markup.syntax--italic {
+        color: @flat-green;
+        font-style: italic;
     }
 
-    .gutter {
-        background-color: @syntax-gutter-background-color;
-    }
-    .gutter .cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-    }
-    .line-number.cursor-line-no-selection {
-        background-color: @syntax-gutter-background-color-selected;
+    .syntax--variable.syntax--list,
+    .syntax--support.syntax--quote {
+        color: @darkish-gray;
     }
 
-    .gutter .line-number.folded,
-    .gutter .line-number:after,
-    .fold-marker:after {
-        color: @lavender;
+    .syntax--link .syntax--entity {
+        color: white;
     }
 
-    .invisible {
-        color: @syntax-text-color;
+    .syntax--link {
+        color: @darkish-gray;
     }
 
-    .cursor {
-        border-color: @syntax-cursor-color;
-    }
-
-    .selection .syntax--region {
-        background-color: @syntax-selection-color;
-        border-radius: 2px;
-    }
-
-    // Markdown Styles
-
-    .syntax--source.syntax--gfm {
-        color: @light-gray;
-    }
-
-    .syntax--gfm {
-        .syntax--markup.syntax--heading {
-            color: @light-yellow;
-        }
-
-        .syntax--markup.syntax--bold {
-            color: @flat-blue;
-            font-weight: bold;
-        }
-
-        .syntax--markup.syntax--italic {
-            color: @flat-green;
-            font-style: italic;
-        }
-
-        .syntax--variable.syntax--list,
-        .syntax--support.syntax--quote {
-            color: @dark-gray;
-        }
-
-        .syntax--link .syntax--entity {
-            color: white;
-        }
-
-        .syntax--link {
-            color: @dark-gray;
-        }
-
-        .syntax--raw {
-            color: @red;
-        }
-    }
-
-    .syntax--markdown {
-        .syntax--paragraph {
-            color: @gray;
-        }
-
-        .syntax--heading {
-            color: @light-yellow;
-        }
-
-        .syntax--raw {
-            color: @red;
-        }
-
-        .syntax--link {
-            color: @dark-gray;
-
-            .syntax--string {
-                color: @dark-gray;
-
-                &.syntax--title {
-                    color: @lighter-gray;
-                }
-            }
-        }
+    .syntax--raw {
+        color: @red;
     }
 }
 
-.syntax--bracket-matcher .syntax--region {
-    border-radius: 1px;
-    border-bottom: 2px solid @light-yellow;
-    background-color: @darker-gray;
+.syntax--markdown {
+    .syntax--paragraph {
+        color: @gray;
+    }
+
+    .syntax--heading {
+        color: @light-yellow;
+    }
+
+    .syntax--raw {
+        color: @red;
+    }
+
+    .syntax--link {
+        color: @dark-gray;
+
+        .syntax--string {
+            color: @dark-gray;
+
+            &.syntax--title {
+                color: @lighter-gray;
+            }
+        }
+    }
 }
 
 .syntax--comment {
