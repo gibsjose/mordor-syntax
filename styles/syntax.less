@@ -52,10 +52,10 @@
     }
 
     .syntax--link {
-        color: @dark-gray;
+        color: @darkish-gray;
 
         .syntax--string {
-            color: @dark-gray;
+            color: @darkish-gray;
 
             &.syntax--title {
                 color: @lighter-gray;
@@ -71,9 +71,9 @@
 .syntax--entity {
     color: @portafino;
 
-    //Function definition
+    // User-defined function call
     &.syntax--function {
-        color: @red;
+        // color: @red;
     }
 
     &.syntax--name.syntax--type {
@@ -97,7 +97,7 @@
         color: @lighter-gray;
     }
     &.syntax--operator.syntax--logical {
-        color: @portafino;
+        color: @flat-blue;
     }
 }
 
@@ -109,10 +109,11 @@
     }
 
     // @TODO
-    &.syntax--type.syntax--class.syntax--todo {
+    &.syntax--todo {
         color: @light-yellow;
         background-color: @dark-gray;
         border-radius: 2px;
+        padding: 2px;
     }
 
     &.syntax--modifier {
@@ -249,19 +250,29 @@
 
 .syntax--meta {
     &.syntax--function-call {
-        color: @light-yellow;
+        color: @light-gray;
     }
 
     &.syntax--function-call.syntax--arguments {
         color: @light-gray;
     }
 
-    &.syntax--preprocessor.syntax--c {
+    &.syntax--preprocessor {
+        .syntax--name {
+            color: @red;
+        }
+
+        .syntax--keyword {
+            color: @flat-blue;
+        }
+    }
+
+    .syntax--sizeof {
         color: @flat-blue;
     }
 
-    &.syntax--preprocessor.syntax--c .syntax--keyword {
-        color: @teal;
+    .syntax--function .syntax--entity {
+        color: @portafino;
     }
 
     &.syntax--cast {
